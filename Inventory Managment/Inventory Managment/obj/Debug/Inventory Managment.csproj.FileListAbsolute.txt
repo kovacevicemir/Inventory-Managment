@@ -1,0 +1,21 @@
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\bin\Debug\Inventory Managment.exe.config
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\bin\Debug\Inventory Managment.exe
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\bin\Debug\Inventory Managment.pdb
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Inventory Managment.csprojResolveAssemblyReference.cache
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Login.g.cs
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\MainWindow.g.cs
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\App.g.cs
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Inventory Managment_MarkupCompile.cache
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Inventory Managment_MarkupCompile.lref
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Login.baml
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\MainWindow.baml
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Inventory Managment.g.resources
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Inventory_Managment.Properties.Resources.resources
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Inventory Managment.csproj.GenerateResource.Cache
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Inventory Managment.exe
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Inventory Managment.pdb
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\bin\Debug\Inventory.mdf
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\bin\Debug\Inventory_log.ldf
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Homepage.g.cs
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Inventory Managment_Content.g.cs
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Homepage.baml
