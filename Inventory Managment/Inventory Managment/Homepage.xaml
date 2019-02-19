@@ -8,9 +8,17 @@
         Title="Homepage"
         MinHeight="700"
         MinWidth="900"
-        Height="800"
-        Width="1024">
+        WindowState="Maximized">
     <Grid>
-        <TextBlock>Homepage</TextBlock>
+
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_User">
+                    <MenuItem x:Name="menu_add_user" Header="_Add /User" Click="menu_add_user_Click"/>
+                </MenuItem>
+            </Menu>
+            <StackPanel></StackPanel>
+        </DockPanel>
+
     </Grid>
 </Window>

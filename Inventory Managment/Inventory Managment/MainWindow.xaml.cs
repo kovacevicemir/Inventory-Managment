@@ -28,6 +28,10 @@ namespace Inventory_Managment
             var login_form = new Login();
             login_form.Show();
             this.Close();
+
+            //var add_new_user = new Add_new_user();
+            //add_new_user.Show();
+            //this.Close();
         }
     }
 }

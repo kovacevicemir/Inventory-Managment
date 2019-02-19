@@ -10,16 +10,19 @@
         MinWidth="900"
         Height="800"
         Width="1024">
-    
-    <Grid Background="#FF42B4D2">
+
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionColorKey}}"/>
+        </Grid.Background>
         <Image x:Name="image" Source="/images/lock.png" HorizontalAlignment="Left" Height="267" Margin="116,266,0,0" VerticalAlignment="Top" Width="315"/>
         <Label x:Name="label" Content="Login Form" HorizontalAlignment="Left" Margin="414,113,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36" RenderTransformOrigin="0.145,0.195"/>
         <Label x:Name="Username" Content="Enter Username" HorizontalAlignment="Left" Margin="437,345,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
         <Label x:Name="Password" Content="Enter Password" HorizontalAlignment="Left" Margin="436,424,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        
+
         <TextBox x:Name="username_input" HorizontalAlignment="Left" MinWidth="170" Height="23" Margin="588,353,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170"/>
         <PasswordBox x:Name="password_input" MinWidth="170" Height="23" HorizontalAlignment="Left" Margin="588,432,0,0" VerticalAlignment="Top" PasswordChar="*" />
-        
+
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="267" Margin="396,266,0,0" VerticalAlignment="Top" Width="468" CornerRadius="5"/>
         <Button x:Name="btn_login" Content="Login" HorizontalAlignment="Left" Margin="588,478,0,0" VerticalAlignment="Top" Width="75" FontSize="16" Click="btn_login_Click"/>
     </Grid>

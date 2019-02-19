@@ -24,5 +24,12 @@ namespace Inventory_Managment
             InitializeComponent();
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
         }
+
+        private void menu_add_user_Click(object sender, RoutedEventArgs e)
+        {
+            var add_user = new Add_new_user();
+            add_user.Show();
+            //this.Close();
+        }
     }
 }

@@ -19,3 +19,5 @@ C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Man
 C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Homepage.g.cs
 C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Inventory Managment_Content.g.cs
 C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Homepage.baml
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Add_new_user.g.cs
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Add_new_user.baml
