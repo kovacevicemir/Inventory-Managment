@@ -89,7 +89,7 @@ namespace Inventory_Managment
         public void Display()
         {
             //Create Query command that select ALL data from db
-            int i = 0;
+            //int i = 0;
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = System.Data.CommandType.Text;
             cmd.CommandText = "select * from registration";
@@ -103,7 +103,6 @@ namespace Inventory_Managment
             //Insert data into DataGrid
             dataGrid_users.ItemsSource = dt.DefaultView;
             dataGrid_users.CanUserAddRows = false;
-
         }
 
         private void btn_delete_user_Click(object sender, RoutedEventArgs e)

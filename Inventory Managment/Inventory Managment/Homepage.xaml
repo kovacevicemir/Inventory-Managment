@@ -12,9 +12,15 @@
     <Grid>
 
         <DockPanel>
-            <Menu DockPanel.Dock="Top">
-                <MenuItem Header="_User">
+            <Menu DockPanel.Dock="Top" Height="38" Margin="0,0,-0.4,0">
+                <!--Users-->
+                <MenuItem Header="_User" Height="45" Width="72" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold">
                     <MenuItem x:Name="menu_add_user" Header="_Add /User" Click="menu_add_user_Click"/>
+                </MenuItem>
+
+                <!--Units-->
+                <MenuItem Header="_Units" Height="45" Width="78" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold">
+                    <MenuItem x:Name="menu_add_units" Header="_Add /Units" Click="menu_add_units_Click"/>
                 </MenuItem>
             </Menu>
             <StackPanel></StackPanel>

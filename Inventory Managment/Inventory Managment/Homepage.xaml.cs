@@ -31,5 +31,11 @@ namespace Inventory_Managment
             add_user.Show();
             //this.Close();
         }
+
+        private void menu_add_units_Click(object sender, RoutedEventArgs e)
+        {
+            var add_units = new Units();
+            add_units.Show();
+        }
     }
 }
