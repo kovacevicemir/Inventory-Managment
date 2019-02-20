@@ -12,11 +12,12 @@
         <Grid.Background>
             <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionColorKey}}"/>
         </Grid.Background>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="129" Margin="163,110,0,0" VerticalAlignment="Top" Width="276" Background="Black" Opacity="0.1"/>
         <Label x:Name="label" Content="Add New Units" HorizontalAlignment="Left" Margin="384,32,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="26"/>
         <Label x:Name="label1" Content="Add New Units" HorizontalAlignment="Left" Margin="181,129,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Button x:Name="btn_add_unit" Content="Add" HorizontalAlignment="Left" Margin="356,178,0,0" VerticalAlignment="Top" Width="67" FontWeight="Bold" Height="30" Click="btn_add_unit_Click"/>
         <TextBox x:Name="add_unit_input" HorizontalAlignment="Left" Height="23" Margin="303,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontWeight="Bold"/>
-        <DataGrid x:Name="dataGrid_units" HorizontalAlignment="Left" Margin="488,130,0,0" VerticalAlignment="Top" Height="482" Width="327"/>
-        <Button x:Name="btn_delete_unit" Content="Delete Unit" HorizontalAlignment="Left" Margin="734,617,0,0" VerticalAlignment="Top" Width="81" FontWeight="Bold" Height="29" Click="btn_delete_unit_Click"/>
+        <DataGrid x:Name="dataGrid_units" HorizontalAlignment="Left" Margin="488,110,0,0" VerticalAlignment="Top" Height="482" Width="327"/>
+        <Button x:Name="btn_delete_unit" Content="Delete Unit" HorizontalAlignment="Left" Margin="734,597,0,0" VerticalAlignment="Top" Width="81" FontWeight="Bold" Height="29" Click="btn_delete_unit_Click"/>
     </Grid>
 </Window>

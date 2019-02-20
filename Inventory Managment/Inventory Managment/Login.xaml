@@ -24,6 +24,6 @@
         <PasswordBox x:Name="password_input" MinWidth="170" Height="23" HorizontalAlignment="Left" Margin="588,432,0,0" VerticalAlignment="Top" PasswordChar="*" />
 
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="267" Margin="396,266,0,0" VerticalAlignment="Top" Width="468" CornerRadius="5"/>
-        <Button x:Name="btn_login" Content="Login" HorizontalAlignment="Left" Margin="588,478,0,0" VerticalAlignment="Top" Width="75" FontSize="16" Click="btn_login_Click"/>
+        <Button x:Name="btn_login" Content="Login" HorizontalAlignment="Left" Margin="588,478,0,0" VerticalAlignment="Top" Width="75" FontSize="16" IsDefault="True" Click="btn_login_Click"/>
     </Grid>
 </Window>

@@ -22,6 +22,11 @@
                 <MenuItem Header="_Units" Height="45" Width="78" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold">
                     <MenuItem x:Name="menu_add_units" Header="_Add /Units" Click="menu_add_units_Click"/>
                 </MenuItem>
+
+                <!--Products-->
+                <MenuItem Header="_Products" Height="45" Width="78" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold">
+                    <MenuItem x:Name="menu_add_products" Header="_Add /Products" Click="menu_add_products_Click"/>
+                </MenuItem>
             </Menu>
             <StackPanel></StackPanel>
         </DockPanel>

@@ -37,5 +37,11 @@ namespace Inventory_Managment
             var add_units = new Units();
             add_units.Show();
         }
+
+        private void menu_add_products_Click(object sender, RoutedEventArgs e)
+        {
+            var add_products = new add_products();
+            add_products.Show();
+        }
     }
 }

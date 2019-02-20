@@ -1,0 +1,33 @@
+﻿<Window x:Class="Inventory_Managment.add_products"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Inventory_Managment"
+        mc:Ignorable="d"
+        Title="Add new products"
+        Height="800"
+        Width="1024" FontSize="13">
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionColorKey}}"/>
+        </Grid.Background>
+        <Border BorderBrush="Black" BorderThickness="2,1,1,1" HorizontalAlignment="Left" Height="82" Margin="49,119,0,0" VerticalAlignment="Top" Width="903" Opacity="0.1" Background="Black"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="208" Margin="49,241,0,0" VerticalAlignment="Top" Width="330" Opacity="0.1" Background="Black"/>
+
+        <ComboBox x:Name="comboBox_units" HorizontalAlignment="Left" Margin="590,148,0,0" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="input_product_name" HorizontalAlignment="Left" Height="23" Margin="210,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <Label x:Name="label" Content="Add New Products" HorizontalAlignment="Left" Margin="391,46,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="26"/>
+        <Label x:Name="label_Copy" Content="Product Name" HorizontalAlignment="Left" Margin="91,148,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="13"/>
+        <Label x:Name="label_Copy1" Content="Product Unit" HorizontalAlignment="Left" Margin="479,148,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="13"/>
+        <Button x:Name="btn_add_product" Content="Insert" HorizontalAlignment="Left" Margin="825,148,0,0" VerticalAlignment="Top" Width="92" Height="28" IsDefault="True" Click="btn_add_product_Click"/>
+        <DataGrid x:Name="dataGrid_products" MouseLeftButtonUp="dataGrid_products_row_Click" HorizontalAlignment="Left" Margin="414,241,0,0" VerticalAlignment="Top" Height="420" MinColumnWidth="100" Width="538"/>
+        <Label x:Name="label_Copy2" Content="Product Name" HorizontalAlignment="Left" Margin="91,285,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="13"/>
+        <Label x:Name="label_Copy3" Content="Select Unit" HorizontalAlignment="Left" Margin="91,343,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="13"/>
+        <TextBox x:Name="input_product_name_upd" HorizontalAlignment="Left" Height="23" Margin="210,289,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="comboBox_units_2" HorizontalAlignment="Left" Margin="210,346,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_update_product" Content="Update" HorizontalAlignment="Left" Margin="238,392,0,0" VerticalAlignment="Top" Width="92" Height="28" IsDefault="True" Click="btn_update_product_Click"/>
+        <Button x:Name="btn_delete_product" Content="Delete" HorizontalAlignment="Left" Margin="867,678,0,0" VerticalAlignment="Top" Width="85" Height="24" Click="btn_delete_product_Click"/>
+        <Label x:Name="label1" Content="To delete select product from the list" HorizontalAlignment="Left" Margin="696,678,0,0" VerticalAlignment="Top" FontStyle="Italic" FontSize="10"/>
+    </Grid>
+</Window>

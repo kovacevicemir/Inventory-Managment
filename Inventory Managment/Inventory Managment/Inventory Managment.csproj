@@ -70,10 +70,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="add_products.xaml.cs">
+      <DependentUpon>add_products.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Units.xaml.cs">
       <DependentUpon>Units.xaml</DependentUpon>
     </Compile>
     <Page Include="Add_new_user.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="add_products.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
