@@ -14,6 +14,7 @@
         </Grid.Background>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="262" Margin="78,42,0,0" VerticalAlignment="Top" Width="339" Background="Black" Opacity="0.1"/>
 
+        <!--Add dealer-->
         <Label x:Name="label" Content="Dealer Name" HorizontalAlignment="Left" Margin="97,73,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Label x:Name="label_Copy" Content="Company" HorizontalAlignment="Left" Margin="97,112,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Label x:Name="label_Copy1" Content="Contact" HorizontalAlignment="Left" Margin="97,146,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
@@ -25,7 +26,26 @@
         <TextBox x:Name="input_add_dealer_address" HorizontalAlignment="Left" Height="23" Margin="197,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
         <TextBox x:Name="input_add_dealer_city" HorizontalAlignment="Left" Height="23" Margin="197,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" RenderTransformOrigin="0.484,3.606"/>
         <Button x:Name="btn_add_dealer" Content="Add" HorizontalAlignment="Left" Margin="322,265,0,0" VerticalAlignment="Top" Width="60" Height="28" Click="btn_add_dealer_Click"/>
-        <DataGrid x:Name="dataGrid_dealers" HorizontalAlignment="Left" Margin="461,42,0,0" VerticalAlignment="Top" Height="364" Width="515"/>
+        <DataGrid x:Name="dataGrid_dealers" MouseLeftButtonUp="dataGrid_dealers_row_Click" HorizontalAlignment="Left" Margin="461,42,0,0" VerticalAlignment="Top" Height="364" Width="515"/>
+        <Button x:Name="btn_dealer_update" Content="Update Selected" HorizontalAlignment="Left" Margin="525,424,0,0" VerticalAlignment="Top" Width="104" Height="30" Click="btn_dealer_update_Click"/>
+        <Button x:Name="btn_dealer_delete" Content="Delete Selected" HorizontalAlignment="Left" Margin="830,424,0,0" VerticalAlignment="Top" Width="104" Height="30" Click="btn_dealer_delete_Click"/>
+
+        <!--Update section -->
+        <Grid x:Name="grid_update_dealer" HorizontalAlignment="Left" Visibility="Hidden" Height="349" Margin="78,309,0,0" VerticalAlignment="Top" Width="339">
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="262" Margin="-1,47,0,0" VerticalAlignment="Top" Width="339" Background="Black" Opacity="0.1"/>
+            <Label x:Name="label_Copy4" Content="Dealer Name" HorizontalAlignment="Left" Margin="18,68,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <Label x:Name="label_Copy5" Content="Company" HorizontalAlignment="Left" Margin="18,107,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <Label x:Name="label_Copy6" Content="Contact" HorizontalAlignment="Left" Margin="18,141,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <Label x:Name="label_Copy7" Content="Address" HorizontalAlignment="Left" Margin="18,180,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <Label x:Name="label_Copy8" Content="City" HorizontalAlignment="Left" Margin="18,219,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <TextBox x:Name="input_add_dealer_name_upd" HorizontalAlignment="Left" Height="23" Margin="118,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
+            <TextBox x:Name="input_add_dealer_company_upd" HorizontalAlignment="Left" Height="23" Margin="118,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
+            <TextBox x:Name="input_add_dealer_contact_upd" HorizontalAlignment="Left" Height="23" Margin="118,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
+            <TextBox x:Name="input_add_dealer_address_upd" HorizontalAlignment="Left" Height="23" Margin="118,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
+            <TextBox x:Name="input_add_dealer_city_upd" HorizontalAlignment="Left" Height="23" Margin="118,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" RenderTransformOrigin="0.484,3.606"/>
+            <Button x:Name="btn_update_dealer" Content="Update" HorizontalAlignment="Left" Margin="243,260,0,0" VerticalAlignment="Top" Width="60" Height="28" Click="btn_upd_dealer_final_Click"/>
+        </Grid>
+
 
     </Grid>
 </Window>
