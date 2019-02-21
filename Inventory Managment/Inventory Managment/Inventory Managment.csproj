@@ -73,6 +73,9 @@
     <Compile Include="add_products.xaml.cs">
       <DependentUpon>add_products.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Dealer_info.xaml.cs">
+      <DependentUpon>Dealer_info.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Units.xaml.cs">
       <DependentUpon>Units.xaml</DependentUpon>
     </Compile>
@@ -81,6 +84,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="add_products.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dealer_info.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

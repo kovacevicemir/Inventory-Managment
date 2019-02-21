@@ -43,5 +43,11 @@ namespace Inventory_Managment
             var add_products = new add_products();
             add_products.Show();
         }
+
+        private void menu_dealer_info_Click(object sender, RoutedEventArgs e)
+        {
+            var dealer_info = new Dealer_info();
+            dealer_info.Show();
+        }
     }
 }
