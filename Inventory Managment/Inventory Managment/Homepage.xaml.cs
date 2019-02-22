@@ -49,5 +49,11 @@ namespace Inventory_Managment
             var dealer_info = new Dealer_info();
             dealer_info.Show();
         }
+
+        private void menu_purchase_Click(object sender, RoutedEventArgs e)
+        {
+            var purchase = new Purchase_master();
+            purchase.Show();
+        }
     }
 }

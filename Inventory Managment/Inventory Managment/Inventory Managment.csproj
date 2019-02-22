@@ -76,6 +76,9 @@
     <Compile Include="Dealer_info.xaml.cs">
       <DependentUpon>Dealer_info.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Purchase_master.xaml.cs">
+      <DependentUpon>Purchase_master.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Units.xaml.cs">
       <DependentUpon>Units.xaml</DependentUpon>
     </Compile>
@@ -120,6 +123,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Purchase_master.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Units.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
