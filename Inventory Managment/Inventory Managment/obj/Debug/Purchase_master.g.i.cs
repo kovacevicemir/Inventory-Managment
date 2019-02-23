@@ -200,14 +200,6 @@ namespace Inventory_Managment {
         #line default
         #line hidden
         
-        
-        #line 36 "..\..\Purchase_master.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label label1;
-        
-        #line default
-        #line hidden
-        
         private bool _contentLoaded;
         
         /// <summary>
@@ -321,9 +313,6 @@ namespace Inventory_Managment {
             return;
             case 20:
             this.Unit_display = ((System.Windows.Controls.TextBox)(target));
-            return;
-            case 21:
-            this.label1 = ((System.Windows.Controls.Label)(target));
             return;
             }
             this._contentLoaded = true;
