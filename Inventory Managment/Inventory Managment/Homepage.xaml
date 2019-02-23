@@ -33,6 +33,11 @@
                 <MenuItem Header="_Dealers" Height="45" Width="78" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold">
                     <MenuItem x:Name="menu_dealer_info" Header="_Add /Dealer Info" Click="menu_dealer_info_Click"/>
                 </MenuItem>
+
+                <!--Sales-->
+                <MenuItem Header="_Sales" Height="45" Width="78" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold">
+                    <MenuItem x:Name="menu_sales" Header="_Sell Items" Click="menu_sales_Click"/>
+                </MenuItem>
             </Menu>
             <StackPanel></StackPanel>
         </DockPanel>

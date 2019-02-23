@@ -55,5 +55,11 @@ namespace Inventory_Managment
             var purchase = new Purchase_master();
             purchase.Show();
         }
+
+        private void menu_sales_Click(object sender, RoutedEventArgs e)
+        {
+            var sales = new Sales();
+            sales.Show();
+        }
     }
 }

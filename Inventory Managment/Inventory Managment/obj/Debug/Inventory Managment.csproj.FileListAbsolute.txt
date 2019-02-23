@@ -29,3 +29,5 @@ C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Man
 C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Dealer_info.baml
 C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Purchase_master.g.cs
 C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Purchase_master.baml
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Sales.g.cs
+C:\Users\Emir\Source\Repos\Inventory Managment\Inventory Managment\Inventory Managment\obj\Debug\Sales.baml
