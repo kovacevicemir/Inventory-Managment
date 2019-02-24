@@ -33,14 +33,14 @@
         <TextBox x:Name="input_product_price" HorizontalAlignment="Left" Height="23" Margin="375,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="input_product_quantity" HorizontalAlignment="Left" Height="23" Margin="592,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" LostFocus="qty_lost_Focus"/>
         <TextBox x:Name="input_total" HorizontalAlignment="Left" Height="23" Margin="806,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.769,7.609"/>
-        <ListBox x:Name="listBox_products" SelectionChanged="MyListBox_SelectionChanged" Visibility="Hidden" HorizontalAlignment="Left" Height="141" Margin="154,184,0,0" VerticalAlignment="Top" Width="120" PreviewKeyDown="listbox_Key_Down" MouseLeftButtonDown="list_box_mouse_down"/>
+        <ListBox x:Name="listBox_products" SelectionChanged="MyListBox_SelectionChanged" Visibility="Hidden" HorizontalAlignment="Left" Height="141" Margin="154,184,0,0" VerticalAlignment="Top" Width="120" PreviewKeyDown="listbox_Key_Down"/>
         <DataGrid x:Name="dataGrid_products_sell" MouseLeftButtonUp="dataGrid_dealers_row_Click" HorizontalAlignment="Left" Margin="49,344,0,0" VerticalAlignment="Top" Height="373" Width="538"/>
         <Label x:Name="label2" Content="Total:" HorizontalAlignment="Left" Margin="725,369,0,0" VerticalAlignment="Top" Background="#7F49DDA0" Width="52" FontSize="15" FontWeight="Bold"/>
 
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="233" Margin="672,344,0,0" VerticalAlignment="Top" Width="254" CornerRadius="10"/>
         <Label x:Name="total_display" Content="0" HorizontalAlignment="Left" Margin="782,369,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Background="#FFF3E9E9"/>
         <Button x:Name="btn_delete" Content="Delete" HorizontalAlignment="Left" Margin="725,445,0,0" VerticalAlignment="Top" Width="75" Click="btn_delete_Click"/>
-        <Button x:Name="btn_save_print_bill" Content="Save And Print Bill" HorizontalAlignment="Left" Margin="726,502,0,0" VerticalAlignment="Top" Width="134" Height="31"/>
+        <Button x:Name="btn_save_print_bill" Content="Save And Print Bill" HorizontalAlignment="Left" Margin="726,502,0,0" VerticalAlignment="Top" Width="134" Height="31" Click="btn_save_print_bill_Click"/>
 
 
 

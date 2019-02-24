@@ -142,32 +142,35 @@ namespace Inventory_Managment
             input_total.Text = (Convert.ToInt32(input_product_quantity.Text) * Convert.ToInt32(input_product_price.Text)).ToString();
         }
 
-        //ON MOUSE SELECT LIST BOX - remove this: list_box_mouse_down <- no need for this
-        private void list_box_mouse_down(object sender, MouseButtonEventArgs e) // <- no need for this event
-        {
-            input_product_name.Text = listBox_products.SelectedItem.ToString();
-            string product = listBox_products.SelectedItem.ToString();
-            listBox_products.Visibility = Visibility.Collapsed;
-
-            //GeneratePrice (product)
-            GeneratePrice(product);
-            input_total.Focus();
-        }
-
+        //WHEN CLICK ON LISTBOX ITEM
         private void MyListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            input_product_name.Text = listBox_products.SelectedItem.ToString();
-            string product = listBox_products.SelectedItem.ToString();
-            listBox_products.Visibility = Visibility.Collapsed;
+            try
+            {
+                input_product_name.Text = listBox_products.SelectedItem.ToString();
+                string product = listBox_products.SelectedItem.ToString();
+                listBox_products.Visibility = Visibility.Collapsed;
 
-            //GeneratePrice (product)
-            GeneratePrice(product);
-            input_total.Focus();
+                //GeneratePrice (product)
+                GeneratePrice(product);
+                input_total.Focus();
+            }
+            catch(Exception ex1)
+            {
+
+            }
         }
 
         //ADD BUTTON
         private void btn_sell_Click(object sender, RoutedEventArgs e)
         {
+            //Check if texboxes are empty
+            if(input_first_name.Text == "" || input_last_name.Text == "" || input_product_price.Text == "" || input_product_quantity.Text == "" || input_total.Text == "" || input_bill_date.Text == "" || comboBox_bill_type.Text == "" || input_product_name.Text == "")
+            {
+                MessageBox.Show("Cannot have empty fields !");
+                return;
+            }
+
             int stock = 0;
             //Check if there is enough product quantity
             SqlCommand cmd = con.CreateCommand();
@@ -207,6 +210,17 @@ namespace Inventory_Managment
 
                 //TOTAL SUM
                 total_display.Content = Convert.ToInt32(total_display.Content) + Convert.ToInt32(dr["total"].ToString());
+
+                //CLEAR TEXTBOXES
+                input_product_name.Text = "";
+                input_product_price.Text = "";
+                input_total.Text = "";
+                input_product_quantity.Text = "";
+                //input_first_name.Text = "";
+                //input_last_name.Text = "";
+                //input_bill_date.Text = "";
+                //comboBox_bill_type.Text = "";
+                //comboBox_bill_type.SelectedIndex = 0;
             }
         }
 
@@ -233,11 +247,61 @@ namespace Inventory_Managment
                 id = null;
 
                 //Re-calculate total:
+                string tot;
                 foreach(DataRow dr in datatable_products.Rows)
                 {
-                    total_display.Content = Convert.ToInt32(total_display.Content) + dr["total"].ToString();
+                    //remove leading zeroes for example 0982 = 982
+                    tot = (Convert.ToInt32(total_display.Content) + dr["total"].ToString()).ToString();
+                    tot = tot.TrimStart('0');
+                    total_display.Content = tot;
                 }
             }
+        }
+
+        private void btn_save_print_bill_Click(object sender, RoutedEventArgs e)
+        {
+            string orderid = "";
+
+            //INSERT DATA TO ORDER_USER TABLE
+            SqlCommand cmd1 = con.CreateCommand();
+            cmd1.CommandType = CommandType.Text;
+            cmd1.CommandText = "insert into order_user values('"+ input_first_name.Text +"','" +input_last_name.Text+ "','" +comboBox_bill_type.Text+ "','" +input_bill_date.SelectedDate.Value.ToString("dd-MM-yyyy")+ "')";
+            cmd1.ExecuteNonQuery();
+
+            //get orderid from order_user table
+            SqlCommand cmd2 = con.CreateCommand();
+            cmd2.CommandType = CommandType.Text;
+            cmd2.CommandText = "select top 1 * from order_user order by id desc";
+            cmd2.ExecuteNonQuery();
+
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd2);
+            da.Fill(dt);
+
+            foreach(DataRow dr in dt.Rows)
+            {
+                orderid = dr["id"].ToString();
+            }
+
+            //INSERT DATA INTO ORDER_ITEM TABLE
+            foreach(DataRow dr in datatable_products.Rows)
+            {
+                SqlCommand cmd3 = con.CreateCommand();
+                cmd3.CommandType = CommandType.Text;
+                cmd3.CommandText = "insert into order_item values('" + orderid + "','" + dr["Product"].ToString() + "','" + dr["Price"].ToString() + "','" + dr["Quantity"].ToString() + "','" + dr["Total"].ToString() + "')";
+                cmd3.ExecuteNonQuery();
+            }
+
+            //CLEAR TEXTBOXES
+            total_display.Content = 0;
+            input_product_price.Text = "";
+            input_product_quantity.Text = "";
+            input_total.Text = "";
+            input_product_name.Text = "";
+            listBox_products.SelectedIndex = 0;
+            datatable_products.Clear();
+
+            MessageBox.Show("Order saved successfully !");
         }
     }
 }
