@@ -290,6 +290,9 @@ namespace Inventory_Managment
                 cmd3.CommandType = CommandType.Text;
                 cmd3.CommandText = "insert into order_item values('" + orderid + "','" + dr["Product"].ToString() + "','" + dr["Price"].ToString() + "','" + dr["Quantity"].ToString() + "','" + dr["Total"].ToString() + "')";
                 cmd3.ExecuteNonQuery();
+
+                //Decrease stock for each item in datagrid_products
+                DecreaseStock(dr["Product"].ToString(), Convert.ToInt32(dr["Quantity"].ToString()));
             }
 
             //CLEAR TEXTBOXES
@@ -303,5 +306,14 @@ namespace Inventory_Managment
 
             MessageBox.Show("Order saved successfully !");
         }
+
+    public void DecreaseStock(string productName, int qty)
+        {
+            SqlCommand cmd3 = con.CreateCommand();
+            cmd3.CommandType = CommandType.Text;
+            cmd3.CommandText = "update stock set product_qty=product_qty - " +qty+ " where product_name='" +productName+ "'";
+            cmd3.ExecuteNonQuery();
+        }
+    
     }
 }
